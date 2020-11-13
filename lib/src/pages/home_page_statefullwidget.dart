@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 
 // Estilos de textos
-final estiloTexto = new TextStyle(color: Colors.blue, fontSize: 25);
+TextStyle _estiloTexto = new TextStyle(color: Colors.blue, fontSize: 25);
+int _conteo = 0;
 
-int conteo = 0;
+class ContadorPage extends StatefulWidget {
+  ContadorPage({Key key}) : super(key: key);
 
-class HomePage extends StatelessWidget {
+  @override
+  createState() => _ContadorPageState();
+}
+
+class _ContadorPageState extends State<ContadorPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,11 +25,11 @@ class HomePage extends StatelessWidget {
           children: <Widget>[
             Text(
               'Numeros de Tabs',
-              style: estiloTexto,
+              style: _estiloTexto,
             ),
             Text(
-              '$conteo',
-              style: estiloTexto,
+              '$_conteo',
+              style: _estiloTexto,
             ),
           ],
         ),
@@ -31,8 +37,12 @@ class HomePage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add),
           onPressed: () {
-            conteo++;
+            _conteo++;
             print('Hola mundo{}');
+            setState(() {});
+            if (_conteo == 30) {
+              print('Mas de 30 toques');
+            }
           }),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
     );
