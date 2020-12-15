@@ -10,6 +10,8 @@ final _colors = <String, Color>{
   'red': Colors.red,
   'green': Colors.green,
   'yellow': Colors.yellow,
+  'purple': Colors.purple,
+  'browm': Colors.brown,
 };
 Icon getIconWithColor(String nombreIcono, String color) {
   return Icon(_icons[nombreIcono], color: _colors[color]);

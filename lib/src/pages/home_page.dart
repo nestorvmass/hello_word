@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 // Estilos de textos
-final estiloTexto = new TextStyle(color: Colors.blue, fontSize: 25);
+final estiloTexto = new TextStyle(color: Colors.red, fontSize: 25);
 
 int conteo = 0;
 
