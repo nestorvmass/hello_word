@@ -8,11 +8,12 @@ class AlertPage extends StatelessWidget {
         title: Text('Alert page'),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add_a_photo),
+        child: Icon(Icons.arrow_back_ios),
         onPressed: () {
           Navigator.pop(context);
         },
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
     );
   }
 }

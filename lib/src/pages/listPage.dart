@@ -75,9 +75,11 @@ class ListPage extends StatelessWidget {
           ),
           onTap: () {
             // para ir a una sola pagina
-            final route = MaterialPageRoute(builder: (context) => AlertPage());
-            Navigator.push(context, route);
-            print("cambie a otra");
+            // final route = MaterialPageRoute(builder: (context) => AlertPage());
+            // Navigator.push(context, route);
+            // print("cambie a otra");
+
+            Navigator.pushNamed(context, opt['ruta']);
           });
       opciones.add(widgetTemp);
       opciones.add(Divider());
