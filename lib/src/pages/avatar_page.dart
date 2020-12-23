@@ -6,6 +6,15 @@ class AvatarPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Avatar page'),
+        actions: [
+          Container(
+            margin: EdgeInsets.only(right: 20.0),
+            child: CircleAvatar(
+              child: Text('SL'),
+              backgroundColor: Colors.green,
+            ),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.arrow_back_ios),

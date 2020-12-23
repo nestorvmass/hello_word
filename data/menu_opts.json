@@ -15,6 +15,22 @@
             "ruta" : "card",
             "icon" : "folder_open",
             "texto": "Cards - Tarjetas"
+        },
+        {
+            "ruta" : "animateContainer",
+            "icon" : "play",
+            "texto": "Animacion Container"
+        },
+        {
+            "ruta" : "inputs",
+            "icon" : "input",
+            "texto": "inputs"
+        },
+        {
+            "ruta" : "lista",
+            "icon" : "lista",
+            "texto": "Lista"
         }
+        
     ]
 }
