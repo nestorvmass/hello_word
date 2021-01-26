@@ -7,7 +7,9 @@ class ListaPage extends StatefulWidget {
 
 class _ListaPageState extends State<ListaPage> {
   List<int> _listaNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 34, 62, 24, 543];
+  int _ultimoItem = 0;
 
+  ScrollController _scrollController = new ScrollController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,5 +32,11 @@ class _ListaPageState extends State<ListaPage> {
       },
       itemCount: _listaNumeros.length,
     );
+  }
+
+  void _agregar10() {
+    for (var i = 0; i < 10; i++) {
+      _ultimoItem++;
+    }
   }
 }
